@@ -1,132 +1,200 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-.cabecalho{
+.cabecalho {
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation:backInDown;
+  animation: backInLeft;
   animation-duration: 1s;
   background-color: rgb(0, 0, 0);
   border: none;
 
 }
 
-.img_logo{
+.img_logo {
   margin-top: 1rem;
   width: 64px;
   height: 64px;
   border-radius: 50px;
 }
-.txt_logo{
-  color:#e28743;
+.txt_logo {
+  color: #e28743;
   font-size: 20px;
 }
 
-.div_baner{
+.div_baner {
   display: flex;
   flex-direction: column;
-  background-image: url('./img/Baner.png') ;
+  background-image: url('./img/Baner.png');
   height: 550px;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  animation:backInDown;
+  animation: backInLeft;
   animation-duration: 1s;
   margin-top: 0px;
 
 }
 
-.div_txt_baner{
+.div_txt_baner {
   margin-left: 16px;
   margin-top: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.txt_baner{
+.txt_baner {
   color: white;
   font-size: 25px;
   margin-left: 16px;
 
 }
 
-.p_baner{
+.p_baner {
   color: white;
   font-size: 20px;
   margin-top: 1rem;
 }
 
-.txt_email{
+.txt_email {
   color: white;
   font-size: 20px;
 }
 
-.linha{
-  border-top-color:dimgray;
+.linha {
+  border-top-color: dimgray;
   border: 0.5px;
-  border-style:solid;
+  border-style: solid;
   margin-top: 20px;
   opacity: 0.1;
 }
 
-.txt_titulo{
-    color:#e28743;
-    font-size: 20px;
-    margin-left: 16px;
-  
+.txt_titulo {
+  color: #e28743;
+  font-size: 20px;
+  margin-left: 16px;
+  margin-top: 20px;
+	animation: backInLeft;
+  animation-duration: 1s;
 }
 
-.txt_quem_somos{
+.txt_quem_somos {
   margin-top: 12px;
   font-size: 20px;
   margin-left: 16px;
+  margin-right: 16px;
+	animation: backInLeft;
+  animation-duration: 1s;
+	color: dimgray;
 }
 
-.redes{
+.servicos {
+  width: 93%;
+  height: 93%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+
+}
+.img_servico {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.img_servico2 {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  opacity: 1;
+  transform: scale(1);
+  animation: backInLeft;
+  animation-duration: 1s;
+  
+}
+
+.redes {
   display: flex;
   align-items: center;
   flex-direction: row;
   margin-top: 20px;
 }
 
-a{
+a {
   text-decoration: none;
 }
-.icom{
+.icom {
   width: 35px;
   right: 35px;
   border-radius: 50px;
   margin-top: auto;
-} 
+}
 
-.picom{
+.picom {
   color: white;
-  margin-top:20px;
+  margin-top: 20px;
   font-size: 18px;
   margin-left: 8px;
 }
 
-.facebook{
+.contato1{
   display: flex;
   flex-direction: row;
   width: 40%;
-  border-radius: 8px;  
-  background-color:#e28743;
-  padding:10px ;
+  border-radius: 8px;
+  background-color: #e28743;
+  padding: 10px;
   margin-top: 20px;
   margin-left: 8px;
-  animation:tada;
-  animation-duration: 2s;
-  animation-delay: 2s;
+ 	animation: tada;
+  animation-duration: 3s;
 }
 
-
-.txtrodape{
+.facebook {
   display: flex;
-  color:var(--primary);
+  flex-direction: row;
+  width: 40%;
+  border-radius: 8px;
+  background-color: #e28743;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 16px;
+}
+
+.facebook2 {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  border-radius: 8px;
+  background-color: #e28743;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 16px;
+  opacity: 1;
+  transform: scale(1);
+  animation: tada;
+  animation-duration: 1s;
+}
+.txt_endereco{
+	margin-top: 12px;
+  font-size: 15px;
+  margin-left: 16px;
+  color: dimgray;
+}
+
+.txtrodape {
+  display: flex;
+  color: #e28743;
   margin-left: auto;
   margin-right: auto;
   margin-top: 24px;
+  margin-bottom: 20px;
 }
