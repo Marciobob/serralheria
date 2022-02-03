@@ -28,7 +28,7 @@
 .div_baner {
   display: flex;
   flex-direction: column;
-  background-image: url('./img/Baner.png');
+  background-image: url('https://marciobob.github.io/serralheria/Img/Baner.png');
   height: 550px;
   width: 100%;
   background-size: cover;
