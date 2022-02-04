@@ -16,7 +16,7 @@ function cria_img() {
     
     	    div.appendChild(img)
     
-    	    img.src="https://marciobob.github.io/serralheria/Img/Portao/portao"+index+".jpg"
+    	    img.src="https://marciobob.github.io/serralheria/Img/Portao/Portao"+index+".jpg"
     
     	    console.log("IMG ",img)
 
