@@ -2,7 +2,7 @@ console.log('criar img')
 //https://marciobob.github.io/serralheria/Img/
 function cria_img() {
 	
-  	portao = Array.from(Array(5).keys())
+  	portao = Array.from(Array(13).keys())
   	
 		console.log(portao);
 		
@@ -16,7 +16,7 @@ function cria_img() {
     
     	    div.appendChild(img)
     
-    	    img.src="https://marciobob.github.io/serralheria/Img/portao"+index+".png"
+    	    img.src="https://marciobob.github.io/serralheria/Img/Portao/portao"+index+".jpg"
     
     	    console.log("IMG ",img)
 
