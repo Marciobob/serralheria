@@ -1,5 +1,8 @@
-console.log('criar img')
-//https://marciobob.github.io/serralheria/Img/
+console.log("botao portao")
+
+var  portao = document.getElementById('btn_portao')
+console.log(portao)
+
 function cria_img() {
 	
   	portao = Array.from(Array(13).keys())
@@ -24,10 +27,15 @@ function cria_img() {
     	    img.loading="lazy"
 			
 		})
-
-    
+		window.scrollTo(200, window.innerHeight+470);
   }
-  
-window.addEventListener("load", cria_img);
 
 
+function botao_servicos() {
+	console.log("abrindo div portão",document.getElementById('img_servicos'))
+	document.getElementById('div_servicos').style.width="100%"
+	cria_img()
+	
+}
+
+portao.addEventListener("click", botao_servicos);
