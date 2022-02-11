@@ -27,7 +27,7 @@ function cria_img() {
     	    img.loading="lazy"
 			
 		})
-		window.scrollTo(200, window.innerHeight+470);
+		window.scrollTo(0, window.innerHeight+470);
   }
 
 
