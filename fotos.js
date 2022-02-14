@@ -27,6 +27,6 @@ function scrooll(){
   })
 }
 
-scrooll()
+//scrooll()
 
 document.addEventListener("scroll", scrooll)
