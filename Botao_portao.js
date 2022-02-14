@@ -48,6 +48,6 @@ portao.addEventListener("click", ()=>{
 });
 
 porta.addEventListener("click",  ()=>{
-	cria_img(10, "Porta", "div_porta")
+	cria_img(10, "Portas", "div_porta")
 });
 
