@@ -3,17 +3,47 @@ console.log("botao portao")
 var  portao = document.getElementById('btn_portao')
 
 var  porta = document.getElementById('btn_portas')
-console.log("&&&",porta)
+
+var  janela = document.getElementById('btn_janela')
+
+var  corrimao= document.getElementById('btn_corrimao')
+
+var  vidro = document.getElementById('btn_vidros')
+
+
+
+
+function scrooll(){
+  console.log("scrool")
+
+  document.querySelectorAll("img").forEach((img,index)=>{
+  	
+  	var tamanho_lista = document.querySelectorAll("img").length - 1
+  	
+    const div = document.getElementById("faceboo")
+    
+    if(index >1  && index < tamanho_lista && img.getBoundingClientRect().top < window.innerHeight){ 
+  
+      img.classList.add("img_servico2")
+    }
+	else if(index == tamanho_lista  && img.getBoundingClientRect().top < window.innerHeight){ 
+  		
+      div.classList.add("facebook2")
+      
+    }
+    else{
+		img.classList.remove("img_servico2")
+		div.classList.remove("facebook2")
+    }
+  })
+}
 
 
 function cria_img(lista, pasta, div) {
 	
-  	portao = Array.from(Array(lista).keys())
-  	
-		console.log(portao);
+  	portao = Array.from(Array(lista).keys()) 	
 		
 		portao.forEach((index)=>{
-			console.log(index)
 			
 			const divs = document.getElementById(div)
     
@@ -24,8 +54,6 @@ function cria_img(lista, pasta, div) {
     
     	    img.src="https://marciobob.github.io/serralheria/Img/"+pasta+"/"+pasta+index+".jpg"
     
-    	    console.log("IMG ",img)
-
     	    img.classList.add("img_servico")
     	    img.loading="lazy"
 			
@@ -36,10 +64,9 @@ function cria_img(lista, pasta, div) {
 
 
 function botao_servicos(div) {
-	console.log("abrindo div portão",document.getElementById('img_servicos'))
+	console.log("abrindo div portão",document.getElementById(div).getBoundingClientRect().top)
 	document.getElementById(div).style.width="100%"
-	//cria_img(lista, pasta, div)
-	//window.scrollTo(1,1);
+	scrooll()
 }
 
 
@@ -50,4 +77,23 @@ portao.addEventListener("click", ()=>{
 porta.addEventListener("click",  ()=>{
 	cria_img(10, "Portas", "div_porta")
 });
+
+
+janela.addEventListener("click",  ()=>{
+	cria_img(10, "Janelas", "div_janela")
+});
+
+
+corrimao.addEventListener("click",  ()=>{
+	cria_img(10, "Corrimao", "div_corrimao")
+});
+
+
+vidro.addEventListener("click",  ()=>{
+	cria_img(10, "Vidros", "div_vidros")
+});
+
+
+
+document.addEventListener("scroll", scrooll)
 
