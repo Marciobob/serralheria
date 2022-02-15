@@ -80,17 +80,17 @@ porta.addEventListener("click",  ()=>{
 
 
 janela.addEventListener("click",  ()=>{
-	cria_img(10, "Janelas", "div_janela")
+	cria_img(9, "Janelas", "div_janela")
 });
 
 
 corrimao.addEventListener("click",  ()=>{
-	cria_img(10, "Corrimao", "div_corrimao")
+	cria_img(14, "Corrimao", "div_corrimao")
 });
 
 
 vidro.addEventListener("click",  ()=>{
-	cria_img(10, "Vidros", "div_vidros")
+	cria_img(15, "Vidros", "div_vidros")
 });
 
 

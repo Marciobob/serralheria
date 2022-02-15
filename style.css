@@ -78,20 +78,25 @@
 .txt_titulo {
   color: #e28743;
   font-size: 20px;
-  margin-left: 16px;
   margin-top: 20px;
+  margin-left: 16px;
 	animation: backInLeft;
   animation-duration: 1s;
 }
 
+.box{
+  padding: 16px;
+}
+
 .txt_quem_somos {
-  margin-top: 12px;
+  margin-top: 16px;
   font-size: 20px;
-  margin-left: 16px;
-  margin-right: 16px;
+ 
 	animation: backInLeft;
   animation-duration: 1s;
 	color: dimgray;
+  text-align:justify;
+
 }
 
 .div_servico {
