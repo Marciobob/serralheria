@@ -177,8 +177,8 @@ a {
 .redes {
   display: flex;
   align-items:flex-start;
-  flex-direction: row;
-  margin-top: 20px;
+  flex-direction: column;
+
   
 }
 
@@ -187,6 +187,8 @@ a {
   flex-direction: row;
   border-radius: 8px;
   margin-left: 16px;
+  margin-top: 20px;
+
 }
 
 .facebook2 {
