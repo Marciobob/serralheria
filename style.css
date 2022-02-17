@@ -84,6 +84,16 @@
   animation-duration: 1s;
 }
 
+
+.txt_servico {
+  color: dimgray;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 16px;
+	animation: backInLeft;
+  animation-duration: 1s;
+}
+
 .box{
   padding: 16px;
 }
@@ -125,12 +135,6 @@
   
 }
 
-.redes {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  margin-top: 20px;
-}
 
 a {
   text-decoration: none;
@@ -144,7 +148,7 @@ a {
 }
 
 .picom {
-  color: white;
+  color: dimgray;
   margin-top: 20px;
   font-size: 18px;
   margin-left: 8px;
@@ -169,26 +173,26 @@ a {
   animation-duration: 3s;
 }
 
+
+.redes {
+  display: flex;
+  align-items:flex-start;
+  flex-direction: row;
+  margin-top: 20px;
+  
+}
+
 .facebook {
   display: flex;
   flex-direction: row;
-  width: 40%;
   border-radius: 8px;
-  background-color: #e28743;
-  padding: 10px;
-  margin-top: 20px;
   margin-left: 16px;
 }
 
 .facebook2 {
   display: flex;
-  flex-direction: row;
-  width: 40%;
+  flex-direction: row; 
   border-radius: 8px;
-  background-color: #e28743;
-  padding: 10px;
-  margin-top: 20px;
-  margin-left: 16px;
   opacity: 1;
   transform: scale(1);
   animation: tada;
@@ -198,7 +202,7 @@ a {
 .txt_endereco{
 	margin-top: 12px;
   font-size: 15px;
-  margin-left: 16px;
+  margin-left: 18px;
   color: dimgray;
 }
 
