@@ -64,7 +64,7 @@ function cria_img(lista, pasta, div) {
 
 
 function botao_servicos(div) {
-	console.log("abrindo div portão",document.getElementById(div).getBoundingClientRect().top)
+	//console.log("abrindo div portão",document.getElementById(div).getBoundingClientRect().top)
 	document.getElementById(div).style.width="100%"
 	scrooll()
 }

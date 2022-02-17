@@ -77,7 +77,7 @@
 
 .txt_titulo {
   color: #e28743;
-  font-size: 20px;
+  font-size: 23px;
   margin-top: 20px;
   margin-left: 16px;
 	animation: backInLeft;
@@ -106,6 +106,7 @@
   animation-duration: 1s;
 	color: dimgray;
   text-align:justify;
+  text-indent: 5px;
 
 }
 
